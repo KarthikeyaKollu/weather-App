@@ -1,0 +1,180 @@
+:root{
+   --back-color : rgb(125, 207, 239);
+    --container : white;
+    --text-color:black; 
+   
+}
+body.dark{
+    --back-color : rgba(0, 0, 0, 0.822);
+    --container :rgb(20, 20, 17);
+    --text-color:white;
+}
+
+body{
+    background-color  :var(--back-color);
+}
+
+
+.container{
+    background-color: var(--container);
+    width : 300px;
+    height: 450px;
+    border-radius: 10px;
+    position: relative;
+    top:100px;
+    left:400px;
+    transition: 0.3s ease;
+    
+}
+.container:hover{
+    transform: scale(1.2);
+    box-shadow: 3px 3px 3px;
+}
+.mode{
+    float: right;
+    width: 40px;
+    height: 40px;
+    #mode_img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+.city_name{
+    display: flex;
+    border-bottom:1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+     color: var(--text-color);
+}
+#input{
+    width: 280px;
+    height: 25px;
+    border: none;
+    background-color: var(--container);
+    color: var(--text-color);
+
+}
+#btn{
+    border: none;
+    background-color: var(--container);
+
+
+}
+#btnimg{
+    width: 30px;
+    height: 25px;
+    background-color: var(--container);
+  
+
+}
+.container .img{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top:50px;
+    left:70px;
+    
+   
+   
+    .image{
+       width: 100%;
+       height: 100%;
+ 
+    }
+}
+.container .temp{
+  height: 50px;
+
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+
+  
+
+    #value{
+        font-size: 50px;
+        color: var(--text-color);
+        
+       
+    }
+
+
+}
+
+.container .desc{
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ 
+
+   
+}
+#description{
+
+    font-size:20px;
+    color: var(--text-color);
+}
+
+
+.container .city{
+
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: var(--text-color);
+
+  
+    
+
+}
+.more{
+    display: flex;
+    
+    .humidity{
+        border-top: 1px solid;
+        display: flex;
+        padding-right: 60px;
+        padding-left: 10px;
+        padding-top: 3px;
+        font-family: sans-serif ;
+        font-weight: bold;
+
+
+        color: var(--text-color);
+        #humidityimg{
+            height: 50px;
+            width: 50px;
+            
+        }
+    }
+    .speed{
+        border-top: 1px solid;
+        border-left: 1px solid;
+        padding-left: 3px;
+        display: flex;
+        padding-right: 80px;
+        overflow: hidden;
+        color: var(--text-color);
+        font-weight: bold;
+       
+        
+        
+        #speedimg{
+            height: 50px;
+            width: 50px;
+           
+            
+        }
+    }
+
+}
