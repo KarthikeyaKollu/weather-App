@@ -69,7 +69,7 @@ async function getWeather(apiKey, city) {
 }
 
 // Replace 'YOUR_API_KEY' with your actual API key from OpenWeatherMap
-const apiKey = "8ea4cc922e03c0b69346296439afcbb3";
+const apiKey = "YOUR_API_KEY";
 
 // Enter the name of the city you want to get weather information for
 
